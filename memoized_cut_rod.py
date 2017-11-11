@@ -1,8 +1,3 @@
-import sys, datetime as dt
-
-comparison = 0
-
-
 def memoized_cut_rod(p, n):
     r = [0] * n
     for i in range(0, n):
@@ -24,7 +19,6 @@ def memoized_cut_rod_aux(p, n, r):
 
 
 def main():
-    global comparison
     p = [1,7,5,8,10]
     print memoized_cut_rod(p,5)
 
